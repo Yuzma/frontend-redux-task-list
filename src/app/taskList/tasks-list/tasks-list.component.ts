@@ -6,10 +6,10 @@ import {validFilter} from '../../filter/filter.action';
 
 @Component({
   selector: 'app-all-list',
-  templateUrl: './all-list.component.html',
-  styleUrls: ['./all-list.component.css']
+  templateUrl: './tasks-list.component.html',
+  styleUrls: ['./tasks-list.component.css']
 })
-export class AllListComponent implements OnInit {
+export class TasksListComponent implements OnInit {
 
   homework:All[] = [];
   currentFilter: validFilter;

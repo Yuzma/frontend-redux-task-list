@@ -3,13 +3,13 @@ import { CommonModule } from '@angular/common';
 import { TasksAddComponent } from './tasks-add/tasks-add.component';
 import { TasksFooterComponent } from './tasks-footer/tasks-footer.component';
 import { TasksItemComponent } from './tasks-item/tasks-item.component';
-import { AllListComponent } from './all-list/all-list.component';
+import { TasksListComponent } from './tasks-list/tasks-list.component';
 import { AllPageComponent } from './all-page/all-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
 
 @NgModule({
-  declarations: [TasksAddComponent, TasksFooterComponent, TasksItemComponent, AllListComponent, AllPageComponent, FilterPipe],
+  declarations: [TasksAddComponent, TasksFooterComponent, TasksItemComponent, TasksListComponent, AllPageComponent, FilterPipe],
   imports: [
     CommonModule,
     ReactiveFormsModule
