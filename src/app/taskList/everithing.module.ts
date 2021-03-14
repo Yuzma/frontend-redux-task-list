@@ -4,18 +4,18 @@ import { TasksAddComponent } from './tasks-add/tasks-add.component';
 import { TasksFooterComponent } from './tasks-footer/tasks-footer.component';
 import { TasksItemComponent } from './tasks-item/tasks-item.component';
 import { TasksListComponent } from './tasks-list/tasks-list.component';
-import { AllPageComponent } from './all-page/all-page.component';
+import { TasksPageComponent } from './tasks-page/tasks-page.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
 
 @NgModule({
-  declarations: [TasksAddComponent, TasksFooterComponent, TasksItemComponent, TasksListComponent, AllPageComponent, FilterPipe],
+  declarations: [TasksAddComponent, TasksFooterComponent, TasksItemComponent, TasksListComponent, TasksPageComponent, FilterPipe],
   imports: [
     CommonModule,
     ReactiveFormsModule
   ],
   exports: [
-    AllPageComponent
+    TasksPageComponent
   ]
 })
 export class EverithingModule { }

@@ -5,13 +5,13 @@ import {AppSate} from '../../app.reducer';
 import {cleanTasksCompleted} from '../homeworks.actions';
 
 @Component({
-  selector: 'app-all-footer',
+  selector: 'app-tasks-footer',
   templateUrl: './tasks-footer.component.html',
   styleUrls: ['./tasks-footer.component.css']
 })
 export class TasksFooterComponent implements OnInit {
-  currentFilter: validFilter = 'all';
-  filter: validFilter[] = ['all', 'completed', 'pending'];
+  currentFilter: validFilter = 'allTasks';
+  filter: validFilter[] = ['allTasks', 'completed', 'pending'];
   pending: number = 0;
   constructor(private store: Store<AppSate>) { }
 

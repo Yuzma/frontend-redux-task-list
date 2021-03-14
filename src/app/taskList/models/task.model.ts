@@ -1,4 +1,4 @@
-export class All {
+export class TaskModel {
 
   public id: number;
   public text: string;

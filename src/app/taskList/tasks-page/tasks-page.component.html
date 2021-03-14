@@ -1,12 +1,12 @@
 <section class="todoapp">
-  <app-all-add></app-all-add>
+  <app-tasks-add></app-tasks-add>
   <!-- This section should be hidden by default and shown when there are todos -->
   <section class="main">
-    <input id="toggle-all" (click)="toggleAll()" class="toggle-all" type="checkbox">
+    <input id="toggle-all" (click)="toggletask()" class="toggle-all" type="checkbox">
     <label for="toggle-all">Mark all as complete</label>
-<app-all-list></app-all-list>
+<app-tasks-list></app-tasks-list>
   </section>
   <!-- This footer should hidden by default and shown when there are todos -->
-  <app-all-footer></app-all-footer>
+  <app-tasks-footer></app-tasks-footer>
 </section>
 

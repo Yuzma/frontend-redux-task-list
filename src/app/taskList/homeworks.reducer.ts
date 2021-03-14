@@ -1,17 +1,17 @@
 import { createReducer, on } from '@ngrx/store';
 import {create, toggle, edit, deleteTask, toggleCompleted, cleanTasksCompleted} from './homeworks.actions';
-import {All} from './models/all.model';
+import {TaskModel} from './models/task.model';
 
-export const initialState:All[] = [
-  new All('Save the world'),
-  new All('Defeat Thanos'),
-  new All('Buy Ironman suit'),
-  new All('Steal captain america shiels'),
+export const initialState:TaskModel[] = [
+  new TaskModel('Save the world'),
+  new TaskModel('Defeat Thanos'),
+  new TaskModel('Buy Ironman suit'),
+  new TaskModel('Steal captain america shiels'),
 ];
 
 const _homeworkReducer = createReducer(
   initialState,
-  on(create, (state, {text}) => [...state, new All(text)]),
+  on(create, (state, {text}) => [...state, new TaskModel(text)]),
   on(deleteTask, (state, {id}) => state.filter( task => task.id !== id)),
   on(toggle, (state, {id}) => {
     return state.map(homework => {

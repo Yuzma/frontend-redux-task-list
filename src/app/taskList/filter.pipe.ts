@@ -1,14 +1,14 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
 import {validFilter} from '../filter/filter.action';
-import {All} from './models/all.model';
+import {TaskModel} from './models/task.model';
 
 @Pipe({
   name: 'filter'
 })
 export class FilterPipe implements PipeTransform {
 
-  transform(homeworks: All[], filter: validFilter): All[] {
+  transform(homeworks: TaskModel[], filter: validFilter): TaskModel[] {
     switch (filter) {
       case 'completed':
         return homeworks.filter(task => task.completed);

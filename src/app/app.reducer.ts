@@ -1,4 +1,4 @@
-import {All} from './taskList/models/all.model';
+import {TaskModel} from './taskList/models/task.model';
 import {ActionReducerMap} from '@ngrx/store';
 import {homeworkReducer} from './taskList/homeworks.reducer';
 import {validFilter} from './filter/filter.action';
@@ -6,7 +6,7 @@ import {filterReducer} from './filter/filter.reducer';
 
 export  interface AppSate{
 
-  homework: All[],
+  homework: TaskModel[],
   filter: validFilter
 }
 

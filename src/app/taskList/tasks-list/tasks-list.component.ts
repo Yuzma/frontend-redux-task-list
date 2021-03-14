@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import {All} from '../models/all.model';
+import {TaskModel} from '../models/task.model';
 import {Store} from '@ngrx/store';
 import {AppSate} from '../../app.reducer';
 import {validFilter} from '../../filter/filter.action';
 
 @Component({
-  selector: 'app-all-list',
+  selector: 'app-tasks-list',
   templateUrl: './tasks-list.component.html',
   styleUrls: ['./tasks-list.component.css']
 })
 export class TasksListComponent implements OnInit {
 
-  homework:All[] = [];
+  homework:TaskModel[] = [];
   currentFilter: validFilter;
 
   constructor( private store:Store<AppSate>) { }

@@ -1,18 +1,18 @@
 import {Component, OnInit, Input, ViewChild, ElementRef} from '@angular/core';
-import {All} from '../models/all.model';
+import {TaskModel} from '../models/task.model';
 import {FormControl, Validators} from '@angular/forms';
 import {Store} from '@ngrx/store';
 import {AppSate} from '../../app.reducer';
 import * as action from '../homeworks.actions';
 
 @Component({
-  selector: 'app-all-item',
+  selector: 'app-tasks-item',
   templateUrl: './tasks-item.component.html',
   styleUrls: ['./tasks-item.component.css']
 })
 export class TasksItemComponent implements OnInit {
 
-  @Input() task: All;
+  @Input() task: TaskModel;
   @ViewChild('inputFisic') txtInputFisic: ElementRef;
 
   chkCompleted: FormControl;

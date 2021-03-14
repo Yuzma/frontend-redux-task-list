@@ -5,11 +5,11 @@ import {toggleCompleted} from '../homeworks.actions';
 import {validFilter} from '../../filter/filter.action';
 
 @Component({
-  selector: 'app-all-page',
-  templateUrl: './all-page.component.html',
-  styleUrls: ['./all-page.component.css']
+  selector: 'app-task-page',
+  templateUrl: './tasks-page.component.html',
+  styleUrls: ['./tasks-page.component.css']
 })
-export class AllPageComponent implements OnInit {
+export class TasksPageComponent implements OnInit {
 
   completed: boolean  = false;
 
@@ -19,7 +19,7 @@ export class AllPageComponent implements OnInit {
 
   }
 
-  toggleAll() {
+  toggletask() {
     this.completed = !this.completed;
     this.store.dispatch(toggleCompleted({completed: this.completed}));
   }

@@ -6,7 +6,7 @@ import {AppSate} from '../../app.reducer';
 import * as actions from '../homeworks.actions';
 
 @Component({
-  selector: 'app-all-add',
+  selector: 'app-tasks-add',
   templateUrl: './tasks-add.component.html',
   styleUrls: ['./task-add.component.css']
 })
